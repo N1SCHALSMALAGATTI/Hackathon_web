@@ -152,6 +152,47 @@ h6 {
   max-height: 40px;
 }
 
+.side-popup {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Hide the pop-up initially by placing it outside the viewport */
+  width: 300px;
+  height: 100%;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: right 0.3s ease-in-out;
+}
+
+.popup-content {
+  padding: 20px;
+}
+
+.close-popup {
+  display: block;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.open-popup {
+  width: 100px;
+  height: 40px;
+  border:2px rgb(255, 188, 65) solid;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+
+}
+
+.open-popup:hover{
+  background-color: rgb(255, 188, 65);
+  color: black;
+
+
+}
 /*--------------------------------------------------------------
 #  Get Startet Button
 --------------------------------------------------------------*/
