@@ -290,4 +290,25 @@
    */
   new PureCounter();
 
+  // script.js
+document.addEventListener('DOMContentLoaded', function () {
+  const sidePopup = document.querySelector('.side-popup');
+  const closeButton = document.querySelector('.close-popup');
+  const openButton = document.querySelector('.open-popup');
+
+  // Function to open or close the side pop-up
+  function togglePopup() {
+      const isOpen = sidePopup.style.right === '0px' || sidePopup.style.right === '';
+      if (isOpen) {
+          sidePopup.style.right = '-300px'; // Close the pop-up
+      } else {
+          sidePopup.style.right = '0'; // Open the pop-up
+      }
+  }
+
+  // Event listener for opening and closing the pop-up
+  openButton.addEventListener('click', togglePopup);
+  closeButton.addEventListener('click', togglePopup);
+});
+
 })()
