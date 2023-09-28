@@ -1,6 +1,6 @@
  /* CSS styles for the sign-in page */
  body {
-    background-image: url("Electronic-Recycling.jpg");
+    background-image: url("namo.webp");
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
@@ -31,8 +31,7 @@
     border-radius: 3px;
     border: 1px solid #ccc;
   }
-  
-  .cancel-btn,
+ 
   .signin-btn {
     padding: 10px 20px;
     border-radius: 3px;
@@ -40,8 +39,7 @@
     color: #fff;
     cursor: pointer;
   }
-  
-  .cancel-btn {
+   {
     background-color: #27ac1f;
     margin-right: 10px;
   }
