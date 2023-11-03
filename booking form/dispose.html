@@ -36,7 +36,7 @@
 				<div class="row">
 					<div class="booking-form">
 						<div class="form-header">
-							<h1>Home Service </h1>
+							<h1>Self-Disposal </h1>
 						</div>
 						<form>
 							<div class="row">
@@ -49,8 +49,8 @@
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
-										<span class="form-label">Pick-up Date</span>
-										<input class="form-control" type="date" required>
+										<span class="form-label">Phone number</span>
+										<input class="form-control" type="number" required>
 									</div>
 								</div>
 							</div>
@@ -64,7 +64,7 @@
 											<option>Small equipment</option>
 											<option>Lightining equipment</option>
 										</select>
-										<h1>User Location</h1>
+										<h1>Nearest E-Waste center</h1>
     									<p>Click the button to get your location:</p>
     									<button onclick="getLocation()">Get Location</button>
     									<p id="location"></p>
@@ -74,7 +74,9 @@
 								<br><br><br>
 								<div class="col-md-3">
 									<div class="form-btn">
-										<button class="submit-btn" style="position: relative; left: 350px;">Check availability</button>
+                                           <button class="submit-btn">Check availability</button>
+                                        
+										
 									</div>
 								</div>
 							</div>
@@ -85,6 +87,8 @@
 		</div>
 	</div>
 	<script>
+        function redirect() {
+        var pageurl = ''        }
         function getLocation() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition, showError);
